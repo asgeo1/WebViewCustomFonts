@@ -13,6 +13,26 @@
 @synthesize window = _window;
 @synthesize webView = _webView;
 @synthesize localWebView = _localWebView;
+@synthesize filePathField = _filePathField;
+
+-(void)awakeFromNib
+{
+    [[NSNotificationCenter defaultCenter] 
+     addObserver:self 
+     selector:@selector(textDidEndEditing:)    
+                        name:NSControlTextDidEndEditingNotification 
+                        object:nil];
+}
+
+- (void)textDidEndEditing:(NSNotification *)aNotification
+{
+//    NSLog(@"%@", [[self filePathField] stringValue]);
+    
+    // Load the localWebView for local filesystem path
+    NSURL* localFileURL = [NSURL fileURLWithPath:[[self filePathField] stringValue]];
+    NSURLRequest* localFileRequest = [NSURLRequest requestWithURL:localFileURL];
+    [[[self localWebView] mainFrame] loadRequest:localFileRequest];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -24,12 +44,6 @@
     NSURL *bundleURL = [NSURL fileURLWithPath:bundleFilePath];
     NSURLRequest *bundleFileRequest = [NSURLRequest requestWithURL:bundleURL];
     [[[self webView] mainFrame] loadRequest:bundleFileRequest];
-    
-    
-    // Load the localWebView for local filesystem path
-    NSURL* localFileURL = [NSURL fileURLWithPath:@"/Users/nandeep/Desktop/randomwebsite/index.html"];
-    NSURLRequest* localFileRequest = [NSURLRequest requestWithURL:localFileURL];
-    [[[self localWebView] mainFrame] loadRequest:localFileRequest];
 }
 
 @end

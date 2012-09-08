@@ -10,10 +10,11 @@
 
 #import <Webkit/Webkit.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSControlTextEditingDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet WebView *webView;
 @property (weak) IBOutlet WebView *localWebView;
+@property (weak) IBOutlet NSTextField *filePathField;
 
 @end
