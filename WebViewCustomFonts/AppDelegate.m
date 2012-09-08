@@ -41,29 +41,25 @@
     // Insert code here to initialize your application
     
     // Load the webView for index.html in resource bundle
-    NSString *bundleFilePath = [[NSBundle mainBundle] pathForResource:@"index" 
-                                                         ofType:@"html"];
-    NSURL *bundleURL = [NSURL fileURLWithPath:bundleFilePath];
-    NSURLRequest *bundleFileRequest = [NSURLRequest requestWithURL:bundleURL];
-    [[[self webView] mainFrame] loadRequest:bundleFileRequest];
+    [[[self webView] mainFrame] loadRequest:[self getURLRequestForResource:@"index" ofType:@"html"]];
     
     // Load the localWebView for local filesystem path
-    NSString *anotherBundleFilePath = [[NSBundle mainBundle] pathForResource:@"intro" 
-                                                               ofType:@"html"];
-    NSURL *anotherBundleURL = [NSURL fileURLWithPath:anotherBundleFilePath];
-    NSURLRequest *anotherbundleFileRequest = [NSURLRequest requestWithURL:anotherBundleURL];
-    [[[self localWebView] mainFrame] loadRequest:anotherbundleFileRequest];
+    [[[self localWebView] mainFrame] loadRequest:[self getURLRequestForResource:@"intro" ofType:@"html"]];
 }
 
 - (void)webView:(WebView *)sender resource:(id)identifier didFailLoadingWithError:(NSError *)error fromDataSource:(WebDataSource *)dataSource
 {
-    // Load the localWebView for local filesystem path
-    NSString *anotherBundleFilePath = [[NSBundle mainBundle] pathForResource:@"404" 
-                                                                      ofType:@"html"];
-    NSURL *anotherBundleURL = [NSURL fileURLWithPath:anotherBundleFilePath];
-    NSURLRequest *anotherbundleFileRequest = [NSURLRequest requestWithURL:anotherBundleURL];
-    [[[self localWebView] mainFrame] loadRequest:anotherbundleFileRequest];
+    // Show error
+    [[[self localWebView] mainFrame] loadRequest:[self getURLRequestForResource:@"404" ofType:@"html"]];
 }
 
+-(NSURLRequest *)getURLRequestForResource:(NSString *)fileName ofType:(NSString *)type
+{
+    NSString *bundleFilePath = [[NSBundle mainBundle] pathForResource:fileName
+                                                               ofType:type];
+    NSURL *bundleURL = [NSURL fileURLWithPath:bundleFilePath];
+    NSURLRequest *bundleFileRequest = [NSURLRequest requestWithURL:bundleURL];
 
+    return bundleFileRequest;
+}
 @end
