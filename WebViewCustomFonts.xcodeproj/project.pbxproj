@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		335D4AF515FB503B00BE50F4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335D4AF415FB503B00BE50F4 /* Cocoa.framework */; };
+		335D4AFF15FB503B00BE50F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 335D4AFD15FB503B00BE50F4 /* InfoPlist.strings */; };
+		335D4B0115FB503B00BE50F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335D4B0015FB503B00BE50F4 /* main.m */; };
+		335D4B0515FB503B00BE50F4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B0315FB503B00BE50F4 /* Credits.rtf */; };
+		335D4B0815FB503B00BE50F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 335D4B0715FB503B00BE50F4 /* AppDelegate.m */; };
+		335D4B0B15FB503B00BE50F4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B0915FB503B00BE50F4 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		335D4AF015FB503B00BE50F4 /* WebViewCustomFonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewCustomFonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		335D4AF415FB503B00BE50F4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		335D4AF715FB503B00BE50F4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		335D4AF815FB503B00BE50F4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		335D4AF915FB503B00BE50F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		335D4AFC15FB503B00BE50F4 /* WebViewCustomFonts-Info.plist */ = {isa = PBXFileReference; path = "WebViewCustomFonts-Info.plist"; sourceTree = "<group>"; };
+		335D4AFE15FB503B00BE50F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		335D4B0015FB503B00BE50F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		335D4B0215FB503B00BE50F4 /* WebViewCustomFonts-Prefix.pch */ = {isa = PBXFileReference; path = "WebViewCustomFonts-Prefix.pch"; sourceTree = "<group>"; };
+		335D4B0415FB503B00BE50F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		335D4B0615FB503B00BE50F4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		335D4B0715FB503B00BE50F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		335D4B0A15FB503B00BE50F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		335D4AED15FB503B00BE50F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335D4AF515FB503B00BE50F4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		335D4AE515FB503B00BE50F4 = {
+			isa = PBXGroup;
+			children = (
+				335D4AFA15FB503B00BE50F4 /* WebViewCustomFonts */,
+				335D4AF315FB503B00BE50F4 /* Frameworks */,
+				335D4AF115FB503B00BE50F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		335D4AF115FB503B00BE50F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				335D4AF015FB503B00BE50F4 /* WebViewCustomFonts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		335D4AF315FB503B00BE50F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				335D4AF415FB503B00BE50F4 /* Cocoa.framework */,
+				335D4AF615FB503B00BE50F4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		335D4AF615FB503B00BE50F4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				335D4AF715FB503B00BE50F4 /* AppKit.framework */,
+				335D4AF815FB503B00BE50F4 /* CoreData.framework */,
+				335D4AF915FB503B00BE50F4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		335D4AFA15FB503B00BE50F4 /* WebViewCustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				335D4B0615FB503B00BE50F4 /* AppDelegate.h */,
+				335D4B0715FB503B00BE50F4 /* AppDelegate.m */,
+				335D4B0915FB503B00BE50F4 /* MainMenu.xib */,
+				335D4AFB15FB503B00BE50F4 /* Supporting Files */,
+			);
+			path = WebViewCustomFonts;
+			sourceTree = "<group>";
+		};
+		335D4AFB15FB503B00BE50F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				335D4AFC15FB503B00BE50F4 /* WebViewCustomFonts-Info.plist */,
+				335D4AFD15FB503B00BE50F4 /* InfoPlist.strings */,
+				335D4B0015FB503B00BE50F4 /* main.m */,
+				335D4B0215FB503B00BE50F4 /* WebViewCustomFonts-Prefix.pch */,
+				335D4B0315FB503B00BE50F4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		335D4AEF15FB503B00BE50F4 /* WebViewCustomFonts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335D4B0E15FB503B00BE50F4 /* Build configuration list for PBXNativeTarget "WebViewCustomFonts" */;
+			buildPhases = (
+				335D4AEC15FB503B00BE50F4 /* Sources */,
+				335D4AED15FB503B00BE50F4 /* Frameworks */,
+				335D4AEE15FB503B00BE50F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebViewCustomFonts;
+			productName = WebViewCustomFonts;
+			productReference = 335D4AF015FB503B00BE50F4 /* WebViewCustomFonts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		335D4AE715FB503B00BE50F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 335D4AEA15FB503B00BE50F4 /* Build configuration list for PBXProject "WebViewCustomFonts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 335D4AE515FB503B00BE50F4;
+			productRefGroup = 335D4AF115FB503B00BE50F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				335D4AEF15FB503B00BE50F4 /* WebViewCustomFonts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		335D4AEE15FB503B00BE50F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335D4AFF15FB503B00BE50F4 /* InfoPlist.strings in Resources */,
+				335D4B0515FB503B00BE50F4 /* Credits.rtf in Resources */,
+				335D4B0B15FB503B00BE50F4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		335D4AEC15FB503B00BE50F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335D4B0115FB503B00BE50F4 /* main.m in Sources */,
+				335D4B0815FB503B00BE50F4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		335D4AFD15FB503B00BE50F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335D4AFE15FB503B00BE50F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		335D4B0315FB503B00BE50F4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335D4B0415FB503B00BE50F4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		335D4B0915FB503B00BE50F4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335D4B0A15FB503B00BE50F4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		335D4B0C15FB503B00BE50F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		335D4B0D15FB503B00BE50F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		335D4B0F15FB503B00BE50F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebViewCustomFonts/WebViewCustomFonts-Prefix.pch";
+				INFOPLIST_FILE = "WebViewCustomFonts/WebViewCustomFonts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		335D4B1015FB503B00BE50F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebViewCustomFonts/WebViewCustomFonts-Prefix.pch";
+				INFOPLIST_FILE = "WebViewCustomFonts/WebViewCustomFonts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		335D4AEA15FB503B00BE50F4 /* Build configuration list for PBXProject "WebViewCustomFonts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335D4B0C15FB503B00BE50F4 /* Debug */,
+				335D4B0D15FB503B00BE50F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		335D4B0E15FB503B00BE50F4 /* Build configuration list for PBXNativeTarget "WebViewCustomFonts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335D4B0F15FB503B00BE50F4 /* Debug */,
+				335D4B1015FB503B00BE50F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 335D4AE715FB503B00BE50F4 /* Project object */;
+}
