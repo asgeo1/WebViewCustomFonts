@@ -26,10 +26,12 @@
 
 - (void)textDidEndEditing:(NSNotification *)aNotification
 {
-//    NSLog(@"%@", [[self filePathField] stringValue]);
+    NSString *path = [[self filePathField] stringValue];
+    path = [path stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    [[self filePathField] setStringValue:path];
     
     // Load the localWebView for local filesystem path
-    NSURL* localFileURL = [NSURL fileURLWithPath:[[self filePathField] stringValue]];
+    NSURL* localFileURL = [NSURL fileURLWithPath:path];
     NSURLRequest* localFileRequest = [NSURLRequest requestWithURL:localFileURL];
     [[[self localWebView] mainFrame] loadRequest:localFileRequest];
 }
@@ -44,6 +46,24 @@
     NSURL *bundleURL = [NSURL fileURLWithPath:bundleFilePath];
     NSURLRequest *bundleFileRequest = [NSURLRequest requestWithURL:bundleURL];
     [[[self webView] mainFrame] loadRequest:bundleFileRequest];
+    
+    // Load the localWebView for local filesystem path
+    NSString *anotherBundleFilePath = [[NSBundle mainBundle] pathForResource:@"intro" 
+                                                               ofType:@"html"];
+    NSURL *anotherBundleURL = [NSURL fileURLWithPath:anotherBundleFilePath];
+    NSURLRequest *anotherbundleFileRequest = [NSURLRequest requestWithURL:anotherBundleURL];
+    [[[self localWebView] mainFrame] loadRequest:anotherbundleFileRequest];
 }
+
+- (void)webView:(WebView *)sender resource:(id)identifier didFailLoadingWithError:(NSError *)error fromDataSource:(WebDataSource *)dataSource
+{
+    // Load the localWebView for local filesystem path
+    NSString *anotherBundleFilePath = [[NSBundle mainBundle] pathForResource:@"404" 
+                                                                      ofType:@"html"];
+    NSURL *anotherBundleURL = [NSURL fileURLWithPath:anotherBundleFilePath];
+    NSURLRequest *anotherbundleFileRequest = [NSURLRequest requestWithURL:anotherBundleURL];
+    [[[self localWebView] mainFrame] loadRequest:anotherbundleFileRequest];
+}
+
 
 @end

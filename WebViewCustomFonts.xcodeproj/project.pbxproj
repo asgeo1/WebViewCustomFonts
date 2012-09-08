@@ -16,6 +16,8 @@
 		335D4B1615FB520E00BE50F4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335D4B1515FB520E00BE50F4 /* WebKit.framework */; };
 		335D4B1D15FB549400BE50F4 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B1C15FB549400BE50F4 /* index.html */; };
 		335D4B1F15FB556B00BE50F4 /* WetPaint.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B1E15FB556B00BE50F4 /* WetPaint.ttf */; };
+		335D4B2115FB610900BE50F4 /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B2015FB610900BE50F4 /* 404.html */; };
+		335D4B2315FB611F00BE50F4 /* intro.html in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B2215FB611F00BE50F4 /* intro.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		335D4B1515FB520E00BE50F4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		335D4B1C15FB549400BE50F4 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		335D4B1E15FB556B00BE50F4 /* WetPaint.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WetPaint.ttf; sourceTree = "<group>"; };
+		335D4B2015FB610900BE50F4 /* 404.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 404.html; sourceTree = "<group>"; };
+		335D4B2215FB611F00BE50F4 /* intro.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = intro.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 				335D4B0715FB503B00BE50F4 /* AppDelegate.m */,
 				335D4B0915FB503B00BE50F4 /* MainMenu.xib */,
 				335D4AFB15FB503B00BE50F4 /* Supporting Files */,
+				335D4B2015FB610900BE50F4 /* 404.html */,
+				335D4B2215FB611F00BE50F4 /* intro.html */,
 			);
 			path = WebViewCustomFonts;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 				335D4B0B15FB503B00BE50F4 /* MainMenu.xib in Resources */,
 				335D4B1D15FB549400BE50F4 /* index.html in Resources */,
 				335D4B1F15FB556B00BE50F4 /* WetPaint.ttf in Resources */,
+				335D4B2115FB610900BE50F4 /* 404.html in Resources */,
+				335D4B2315FB611F00BE50F4 /* intro.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
