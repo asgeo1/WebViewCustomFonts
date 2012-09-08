@@ -11,10 +11,25 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize webView = _webView;
+@synthesize localWebView = _localWebView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    
+    // Load the webView for index.html in resource bundle
+    NSString *bundleFilePath = [[NSBundle mainBundle] pathForResource:@"index" 
+                                                         ofType:@"html"];
+    NSURL *bundleURL = [NSURL fileURLWithPath:bundleFilePath];
+    NSURLRequest *bundleFileRequest = [NSURLRequest requestWithURL:bundleURL];
+    [[[self webView] mainFrame] loadRequest:bundleFileRequest];
+    
+    
+    // Load the localWebView for local filesystem path
+    NSURL* localFileURL = [NSURL fileURLWithPath:@"/Users/nandeep/Desktop/randomwebsite/index.html"];
+    NSURLRequest* localFileRequest = [NSURLRequest requestWithURL:localFileURL];
+    [[[self localWebView] mainFrame] loadRequest:localFileRequest];
 }
 
 @end

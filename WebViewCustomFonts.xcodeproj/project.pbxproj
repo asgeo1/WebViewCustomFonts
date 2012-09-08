@@ -13,6 +13,9 @@
 		335D4B0515FB503B00BE50F4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B0315FB503B00BE50F4 /* Credits.rtf */; };
 		335D4B0815FB503B00BE50F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 335D4B0715FB503B00BE50F4 /* AppDelegate.m */; };
 		335D4B0B15FB503B00BE50F4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B0915FB503B00BE50F4 /* MainMenu.xib */; };
+		335D4B1615FB520E00BE50F4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335D4B1515FB520E00BE50F4 /* WebKit.framework */; };
+		335D4B1D15FB549400BE50F4 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B1C15FB549400BE50F4 /* index.html */; };
+		335D4B1F15FB556B00BE50F4 /* WetPaint.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 335D4B1E15FB556B00BE50F4 /* WetPaint.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +24,17 @@
 		335D4AF715FB503B00BE50F4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		335D4AF815FB503B00BE50F4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		335D4AF915FB503B00BE50F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		335D4AFC15FB503B00BE50F4 /* WebViewCustomFonts-Info.plist */ = {isa = PBXFileReference; path = "WebViewCustomFonts-Info.plist"; sourceTree = "<group>"; };
+		335D4AFC15FB503B00BE50F4 /* WebViewCustomFonts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebViewCustomFonts-Info.plist"; sourceTree = "<group>"; };
 		335D4AFE15FB503B00BE50F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		335D4B0015FB503B00BE50F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		335D4B0215FB503B00BE50F4 /* WebViewCustomFonts-Prefix.pch */ = {isa = PBXFileReference; path = "WebViewCustomFonts-Prefix.pch"; sourceTree = "<group>"; };
+		335D4B0215FB503B00BE50F4 /* WebViewCustomFonts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebViewCustomFonts-Prefix.pch"; sourceTree = "<group>"; };
 		335D4B0415FB503B00BE50F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		335D4B0615FB503B00BE50F4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		335D4B0615FB503B00BE50F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		335D4B0715FB503B00BE50F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		335D4B0A15FB503B00BE50F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		335D4B1515FB520E00BE50F4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		335D4B1C15FB549400BE50F4 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		335D4B1E15FB556B00BE50F4 /* WetPaint.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WetPaint.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335D4B1615FB520E00BE50F4 /* WebKit.framework in Frameworks */,
 				335D4AF515FB503B00BE50F4 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +53,7 @@
 		335D4AE515FB503B00BE50F4 = {
 			isa = PBXGroup;
 			children = (
+				335D4B1515FB520E00BE50F4 /* WebKit.framework */,
 				335D4AFA15FB503B00BE50F4 /* WebViewCustomFonts */,
 				335D4AF315FB503B00BE50F4 /* Frameworks */,
 				335D4AF115FB503B00BE50F4 /* Products */,
@@ -82,6 +90,7 @@
 		335D4AFA15FB503B00BE50F4 /* WebViewCustomFonts */ = {
 			isa = PBXGroup;
 			children = (
+				335D4B1B15FB547C00BE50F4 /* webpages */,
 				335D4B0615FB503B00BE50F4 /* AppDelegate.h */,
 				335D4B0715FB503B00BE50F4 /* AppDelegate.m */,
 				335D4B0915FB503B00BE50F4 /* MainMenu.xib */,
@@ -100,6 +109,15 @@
 				335D4B0315FB503B00BE50F4 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		335D4B1B15FB547C00BE50F4 /* webpages */ = {
+			isa = PBXGroup;
+			children = (
+				335D4B1E15FB556B00BE50F4 /* WetPaint.ttf */,
+				335D4B1C15FB549400BE50F4 /* index.html */,
+			);
+			name = webpages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +173,8 @@
 				335D4AFF15FB503B00BE50F4 /* InfoPlist.strings in Resources */,
 				335D4B0515FB503B00BE50F4 /* Credits.rtf in Resources */,
 				335D4B0B15FB503B00BE50F4 /* MainMenu.xib in Resources */,
+				335D4B1D15FB549400BE50F4 /* index.html in Resources */,
+				335D4B1F15FB556B00BE50F4 /* WetPaint.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
